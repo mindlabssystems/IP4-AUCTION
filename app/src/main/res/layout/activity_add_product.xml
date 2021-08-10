@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.SellProduct.AddProductActivity">
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#2352AB"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/go_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_back">
+
+            </androidx.appcompat.widget.AppCompatImageView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toEndOf="@+id/go_back"
+            android:layout_toRightOf="@+id/go_back"
+            android:text="SELL IPV4"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Do you have an IPv4 Block to sell?"
+                android:textColor="@color/blue_text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/category_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Category:"
+                android:textColor="@color/light_violet"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <RadioGroup
+                android:id="@+id/rgp_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rb_ipv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/blue_text"
+                    android:text="IPv4"
+                    android:textColor="@color/blue_text"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rb_asn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:buttonTint="@color/blue_text"
+                    android:text="ASN"
+                    android:textColor="@color/blue_text"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/block_size"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ic_email_bg"
+                android:drawableEnd="@drawable/ic_down_arrow"
+                android:drawableRight="@drawable/ic_down_arrow"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:hint="Block Size"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:textColor="@color/violet_text"
+                android:textColorHint="@color/violet_text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/no_of_address"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_email_bg"
+                android:hint="No of Address"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:textColor="@color/violet_text"
+                android:textColorHint="@color/violet_text"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+               />
+
+            <TextView
+                android:id="@+id/region"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_email_bg"
+                android:drawableEnd="@drawable/ic_down_arrow"
+                android:drawableRight="@drawable/ic_down_arrow"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:hint="Region"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:textColor="@color/violet_text"
+                android:textColorHint="@color/violet_text"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/sale_method_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Preferred Sale Method"
+                android:textColor="@color/light_violet"
+                android:textSize="14sp" />
+
+            <RadioGroup
+                android:id="@+id/rgp_sale_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rb_auction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/blue_text"
+                    android:text="Auction"
+                    android:textColor="@color/blue_text"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rb_buy_now"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:buttonTint="@color/blue_text"
+                    android:text="Buy Now"
+                    android:textColor="@color/blue_text"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/sale_type_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Preferred Sale Type"
+                android:textColor="@color/light_violet"
+                android:textSize="14sp" />
+
+            <RadioGroup
+                android:id="@+id/rgp_sale_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rb_sale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/blue_text"
+                    android:text="Sale"
+                    android:textColor="@color/blue_text"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rb_rent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:buttonTint="@color/blue_text"
+                    android:text="Rent"
+                    android:textColor="@color/blue_text"
+                    android:textSize="14sp" />
+            </RadioGroup>
+            <TextView
+                android:id="@+id/transferable_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Transferable to"
+                android:textColor="@color/light_violet"
+                android:textSize="14sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/regions_rec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:overScrollMode="never"/>
+
+
+
+            <EditText
+                android:id="@+id/sale_price"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_email_bg"
+                android:hint="Price Per IP"
+                android:inputType="number"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:textColor="@color/violet_text"
+                android:textColorHint="@color/violet_text"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/minimum_term"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_email_bg"
+                android:hint="Minimum Term(No of Months)"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:textColor="@color/violet_text"
+                android:textColorHint="@color/violet_text"
+                android:textSize="14sp"
+                android:inputType="number"
+                android:visibility="gone" />
+
+<!--
+            <TextView
+                android:id="@+id/end_date"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_email_bg"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:drawableRight="@drawable/ic_calendar"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:hint="End Date"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:textColor="@color/violet_text"
+                android:textColorHint="@color/violet_text"
+                android:textSize="14sp" />
+-->
+
+            <EditText
+                android:id="@+id/starting_ip"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_email_bg"
+                android:digits="0123456789."
+                android:hint="Starting IP"
+                android:inputType="number"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:textColor="@color/violet_text"
+                android:textColorHint="@color/violet_text"
+                android:textSize="14sp" />
+
+           <!-- <EditText
+                android:id="@+id/ending_ip"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_email_bg"
+                android:digits="0123456789."
+                android:hint="Ending IP"
+                android:inputType="number"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:textColor="@color/violet_text"
+                android:textColorHint="@color/violet_text"
+                android:textSize="14sp" />-->
+
+            <EditText
+                android:id="@+id/detail_info"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_email_bg"
+                android:hint="Detail info link"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:textColor="@color/violet_text"
+                android:textColorHint="@color/violet_text"
+                android:textSize="14sp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_email_bg"
+                android:gravity="top"
+                android:hint="Note"
+                android:minLines="3"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/violet_text"
+                android:textColorHint="@color/violet_text"
+                android:textSize="14sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/submit_but"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/ic_oval_green"
+                android:gravity="center"
+                android:text="Submit Details"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/progress"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#6FF8F6F6"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            style="@style/AVLoadingIndicatorView.Small"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:indicatorColor="#1d79d8"
+            app:indicatorName="LineSpinFadeLoaderIndicator" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

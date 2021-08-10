@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">IP4 AUCTION</string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+    <string name="resend_mail"><u>Resend verification Mail</u></string>
+    <string name="contact_permission">Contact permission are needed to access</string>
+    <string name="storage_permission">Storage permission are needed to access</string>
+    <string name="location_permission">Location permission are needed to access</string>
+    <string name="phone_call_permission">Phone call permission are needed to access</string>
+    <string name="phone_camera_permission">Camera permission are needed to access</string>
+    <string name="record_audio">Audio recording permission needed</string>
+    <string name="camera_audio_permission">Camera and record audio permission are needed to access</string>
+    <string name="camera_storage_permission">Camera and Storage permission are needed </string>
+    <string name="location_storage_permission">Location and Storage permission are needed</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="first_name_must_not_empty">Name must not be empty</string>
+    <string name="last_name_must_not_empty">Last name must not be empty</string>
+    <string name="network_unavailable">No Network</string>
+    <string name="invalid_pwd">Invalid Password</string>
+    <string name="invalid_email">Enter Email</string>
+    <string name="pwd_not_match">Password does not match</string>
+    <string name="confirm_pwd">Confirm password</string>
+    <string name="enter_pwd">Enter Password</string>
+    <string name="login_id_and_pwd">Login id and Password required</string>
+
+    <string name="buy_u"><u>Buy</u></string>
+    <string name="auction_u"><u>Auction</u></string>
+    <string name="sell_u"><u>Sell</u></string>
+    <string name="lease_u"><u>Lease</u></string>
+    <string name="exit">Exit</string>
+    <string name="exit_app">Are you sure you want to exit the application?</string>
+    <string name="yes">Yes</string>
+
+    <string name="no_internet">No Network</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

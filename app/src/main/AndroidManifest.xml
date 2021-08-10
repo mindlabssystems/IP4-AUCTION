@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xsusenet.ip4">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".app.IP4Auction"
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".UI.MyBids.MyBidsActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme1"></activity>
+        <activity
+            android:name=".UI.PurchaseActivity"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".UI.SellProduct.AddProductActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme1"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".UI.Bids.BidListActivity"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".UI.Sell.SellActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".UI.SellAuction.SellAuctionActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".UI.Buy.BuyActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".TermsActivity"
+            android:theme="@style/AppTheme1">
+
+        </activity>
+        <activity
+            android:name=".UI.ChangePassword.ChangePasswordActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".UI.EditProfile.EditProfileActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".UI.BuyAuction.BuyAuctionActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".UI.Register.RegisterActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".UI.Login.LoginActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".UI.Landing.LandingActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".UI.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme1" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.onesignal.NotificationServiceExtension"
+            android:value="com.xsusenet.ip4.Util.NotificationServiceExtension" />
+        <meta-data
+            android:name="com.onesignal.NotificationOpened.DEFAULT"
+            android:value="DISABLE" />
+    </application>
+</manifest>

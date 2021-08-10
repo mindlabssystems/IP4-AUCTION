@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#023788</color>
+    <color name="colorPrimaryDark">#2352AB</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="blue_text">#0C1862</color>
+    <color name="light_grey">#A2A6C1</color>
+    <color name="light_violet">#6C76B9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="view_color">#e4e6ee</color>
+    <color name="violet_text">#6A7091</color>
+    <color name="green">#7CCB1F</color>
+    <color name="forgot_pass">#474E72</color>
+    <color name="blue_bg">#1D79D8</color>
+    <color name="transparent">#00000000</color>
+    <color name="red">#AEFF0000</color>
+    <color name="light_text">#A7ABC4</color>
+    <color name="yellow">#FFFF66</color>
+    <color name="yellow_light">#FAF6D3</color>
+<!--    <color name="yellow">#FFCC00</color>-->
+</resources>
